@@ -9,7 +9,6 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
 import sys
-#import matplotlib.pyplot as plt
 
 sys.path.append('C:/Users/asihn/Anaconda3/Lib/site-packages')
 sys.path.append('C:/Users/asihn/Desktop/SLAC/lcls-tools/')

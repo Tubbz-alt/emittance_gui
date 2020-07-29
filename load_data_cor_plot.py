@@ -18,7 +18,7 @@ data = C("C:/Users/asihn/Desktop/SLAC/emittance_gui/CorrelationPlot/CorrelationP
 s = data.samples
 
 # can use to see the number of data points
-print(data.beam.keys())
+#print(data.beam.keys())
 
 # set the x values for plot
 x = data.ctrl_vals
