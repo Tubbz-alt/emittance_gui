@@ -42,7 +42,7 @@ class DemoScreen(Display):
         #self.ui.plots_frame.layout().addWidget(self.scatter_plot)
 
     def ui_filename(self):
-        return 'test_test.ui'
+        return 'emittance_gui.ui'
 
     def handle_open_file(self):
         print('Handling open file')
@@ -55,7 +55,6 @@ class DemoScreen(Display):
     def handle_plot(self):
         # clear plots:
         self.plot.axes.cla()
-        #self.scatter_plot.axes.cla()
 
         data = C("C:/Users/asihn/Desktop/SLAC/emittance_gui/CorrelationPlot/CorrelationPlot-SOLN_IN20_121_BCTRL-2020-06-21-091733.mat")
 
@@ -83,8 +82,8 @@ class DemoScreen(Display):
         #self.plot.axes.plot(x, yarray)
         self.plot.axes.errorbar(x, yarray, yerr=yerr, label='xStat', ecolor='red', elinewidth=4, linewidth=2, marker='o', markersize=4)
         self.plot.axes.set_title('Correlation Plot')
-        self.plot.axes.set_xlabel('Magnet Strength')
-        self.plot.axes.set_ylabel('X rms (beam size')
+        self.plot.axes.set_xlabel('Magnet Strength (kG-m)')
+        self.plot.axes.set_ylabel('X rms (beam size) (um)')
 
         # self.plot.axes.legend(loc='upper left')
         self.plot.draw()

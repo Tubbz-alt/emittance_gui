@@ -51,8 +51,8 @@ for i in range(0, len(x)):
     yerr.append(stdy)
 
 # Correlation plot
-plt.xlabel('Magnet Strength', fontsize=20)
-plt.ylabel('X rms (beam size)', fontsize=20)
+plt.xlabel('Magnet Strength (kG-m)', fontsize=20)
+plt.ylabel('X rms (beam size) (μm)', fontsize=20)
 plt.errorbar(x, yarray, yerr=yerr, label='xStat', ecolor='red', elinewidth=4, linewidth=2, marker='o', markersize=4)
 plt.title('Correlation Plot', fontsize=30)
 plt.legend(loc='upper left')
